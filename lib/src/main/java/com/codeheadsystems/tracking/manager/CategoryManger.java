@@ -1,7 +1,6 @@
 package com.codeheadsystems.tracking.manager;
 
 import com.codeheadsystems.tracking.model.Category;
-import com.codeheadsystems.tracking.model.Owner;
 import com.codeheadsystems.tracking.model.OwnerId;
 import com.codeheadsystems.tracking.model.PageableList;
 import com.codeheadsystems.tracking.model.QueryOptions;
@@ -14,19 +13,19 @@ public interface CategoryManger {
   /**
    * Categories list.
    *
-   * @param owner the owner
+   * @param ownerId the owner id
    * @return the list
    */
-  PageableList<Category> categories(Owner owner);
+  PageableList<Category> categories(OwnerId ownerId);
 
   /**
    * Categories pageable list.
    *
-   * @param owner        the owner
+   * @param ownerId      the owner id
    * @param queryOptions the query options
    * @return the pageable list
    */
-  PageableList<Category> categories(Owner owner, QueryOptions queryOptions);
+  PageableList<Category> categories(OwnerId ownerId, QueryOptions queryOptions);
 
   /**
    * Categories list.
@@ -63,7 +62,7 @@ public interface CategoryManger {
    * @param category the category
    * @return the category
    */
-  Category update(OwnerId ownerId, Category category);
+  Category upsert(OwnerId ownerId, Category category);
 
   /**
    * Delete boolean.

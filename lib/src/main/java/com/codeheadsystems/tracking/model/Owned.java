@@ -8,8 +8,8 @@ public interface Owned {
   /**
    * Owner id string.
    *
-   * @return the string
+   * @return the value
    */
-  String ownerId();
+  OwnerId ownerId();
 
 }
