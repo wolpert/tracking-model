@@ -48,7 +48,7 @@ public interface SubjectComponentManager<T> {
    * @param component the component
    * @return the t
    */
-  T update(OwnerId ownerId, T component);
+  T upsert(OwnerId ownerId, T component);
 
   /**
    * Delete boolean.

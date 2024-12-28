@@ -46,7 +46,7 @@ public interface SubjectManager {
    * @param subject the subject
    * @return the subject
    */
-  Subject update(OwnerId ownerId, Subject subject);
+  Subject upsert(OwnerId ownerId, Subject subject);
 
   /**
    * Delete boolean.

@@ -10,6 +10,6 @@ public interface Subjectable {
    *
    * @return the string
    */
-  String subjectId();
+  SubjectId subjectId();
 
 }
