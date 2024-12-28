@@ -4,23 +4,23 @@ import java.util.Optional;
 import org.immutables.value.Value;
 
 /**
- * The interface Counter.
+ * The interface Query options.
  */
 @Value.Immutable
-public interface Counter extends Nameable, Dateable, Owned, Subjectable {
+public interface QueryOptions {
 
   /**
-   * Count int.
+   * Size int.
    *
    * @return the int
    */
-  int count();
+  int size();
 
   /**
-   * Timer id optional.
+   * Page token optional.
    *
    * @return the optional
    */
-  Optional<String> timerId();
+  Optional<String> pageToken();
 
 }
