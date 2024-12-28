@@ -7,20 +7,13 @@ import org.immutables.value.Value;
  * The interface Note.
  */
 @Value.Immutable
-public interface Note extends Nameable, Dateable, Owned, Subjectable {
+public interface Event extends Nameable, Dateable, Owned, Subjectable {
 
   /**
-   * Note string.
-   *
-   * @return the string
-   */
-  String note();
-
-  /**
-   * Event id optional.
+   * Counter id optional.
    *
    * @return the optional
    */
-  Optional<String> eventId();
+  Optional<String> counterId();
 
 }
