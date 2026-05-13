@@ -19,7 +19,7 @@ liquibase = '5.0.2'
 micrometer = '1.16.5'
 mokito = '5.23.0'
 pgjdbc = '42.7.11'
-slf4j = '2.0.17'
+slf4j = '2.0.18'
 rs-api = "4.0.0"
 
 [libraries]
